@@ -17,19 +17,18 @@ while 1:
 
         for filename in files:
             if not os.path.isdir(filename):
-                #mp3
+                # mp3
                 if '.mp3' in filename:
                     if not os.path.exists('Music'):
                         os.mkdir('Music')
                     shutil.move(filename, 'Music')
-                #jpg/png
+                # jpg/png
                 elif '.jpg' in filename or '.png' in filename:
                     if not os.path.exists('Images'):
                         os.mkdir('Images')
                     shutil.move(filename, 'Images')
-                #pdf
+                # pdf
                 elif '.pdf' in filename:
                     if not os.path.exists('pdf'):
                         os.mkdir('pdf')
                     shutil.move(filename, 'pdf')
-				

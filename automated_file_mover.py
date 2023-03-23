@@ -1,5 +1,6 @@
 """
-Using watchdog to trigger from system events automatically sorts downloads folder
+Using watchdog to trigger from system events
+automatically sorts downloads folder
 """
 import os
 import time
@@ -7,11 +8,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 
-
-
 class MyHandler(FileSystemEventHandler):
     """Class for file system"""
-    def on_modified(self,event):
+    def on_modified(self, event):
         for filename in os.listdir(FOLDER_TO_TRACK):
             src = FOLDER_TO_TRACK + "/" + filename
             new_destination = FOLDER_DESTINATION + "/" + filename

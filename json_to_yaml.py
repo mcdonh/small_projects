@@ -27,4 +27,3 @@ else:
     target_file = open(sys.argv[2], "w", encoding='utf-8')
     target_file.write(output)
     target_file.close()
-   
