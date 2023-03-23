@@ -1,3 +1,4 @@
+# pylint: disable=R1732
 '''Validates YAML file'''
 
 import os

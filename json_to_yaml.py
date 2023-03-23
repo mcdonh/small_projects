@@ -1,3 +1,4 @@
+# pylint: disable=R1732
 '''Converts json files into yaml'''
 import json
 import os
